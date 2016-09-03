@@ -1,0 +1,803 @@
+html{
+    font-size: 100px;
+}
+html,body,.swiper-container,.swiper-slider,.main{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/*design  340*540*/
+/*music*/
+.music {
+    display: none;
+    position: absolute;
+    top: .3rem;
+    right: .3rem;
+    z-index: 10;
+    width: .6rem;
+    height: .6rem;
+    background: url("../audio/music.svg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.music audio {
+    display: none;
+}
+
+.music.move {
+    -webkit-animation: musicMove 1s linear 0s infinite both;
+    animation: musicMove 1s linear 0s infinite both;
+}
+
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/*page1*/
+.page1{
+    background: url("../img/page6_bg.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page1 *{
+    position: absolute;
+}
+.page1 img:nth-child(1) {
+    width:4.33rem;
+    height: 3.6rem;
+    left:1.23rem;
+    top:1.22rem;
+}
+.page1 img:nth-child(2){
+    width: 6.4rem;
+    height: 4.11rem;
+    bottom: 0.8rem;
+    left:0;
+}
+.page1 .view{
+    width: 6.4rem;
+    height: 0.6rem;
+    overflow: hidden;
+    /*background: rgb(75,148,190);*/
+    bottom: 5.4rem;
+    left: 0;
+}
+.page1  .message{
+    width: 100%;
+    height: 100%;
+    line-height:.6rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: white;;
+    float: left;
+    z-index: 2;
+    letter-spacing: .3rem;
+}
+.page1  .eye{
+    height: 100%;
+    width: 2%;
+    /*color: rgb(75,148,190);*/
+    background-color: red;
+    background-image: -webkit-linear-gradient(left, rgba( 75,148,190,0.9 ) 25%, rgba( 75,148,190,0.1 ) 50%, rgba( 75,148,190,0.9 ) 75%);
+    background-image:  linear-gradient(to right, rgba( 75,148,190,0.9 ) 25%, rgba( 75,148,190,0.1 ) 50%, rgba( 75,148,190,0.9 ) 75%);
+}
+
+/*page2*/
+.page2{
+    background: url("../img/page2_9.jpg") no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.page2 .top{
+    width: 6.4rem;
+    height:4.32rem;
+    background-color: white;
+    margin-top: 0.18rem;
+    position: relative;
+}
+.page2 img,.page2 h2,.page2 span{
+    position: absolute;
+}
+.page2 .top img:nth-child(1){
+    top:0.65rem;
+    left:2.21rem;
+    width: 2.2rem;
+    height: 1.89rem;
+}
+.page2 .top h2{
+    height: .69rem;
+    width: 2.2rem;
+    line-height: .69rem;
+    top: 2.54rem;
+    left: 2.21rem;
+    font-size: 0.3rem;
+    color: #007aff;
+    text-align: center;
+}
+.page2 .top span{
+    width: 3.89rem;
+    height: 0.549rem;
+    display: block;
+    left:1.3rem;
+    font-size: 0.3rem;
+    font-weight: 700;
+    color: #cccccc;
+    text-align: center;
+    line-height: 0.549rem;
+}
+.page2 .top span:nth-child(3){
+    bottom: .6rem;
+}
+.page2 .top span:nth-child(4){
+    bottom: .1rem;
+}
+.page2 .top img:nth-child(5){
+    width: .77rem;
+    height: 1.09rem;
+    left:.53rem;
+    bottom: 0;
+}
+.page2 .top img:nth-child(6){
+    width: 0.48rem;
+    height: .64rem;
+    right: 0.73rem;
+    bottom: 0;
+}
+.bottom{
+    margin-top:.6rem;
+}
+.bottom li{
+    width: 4.6rem;
+    height: 1rem;
+    padding-left: .77rem;
+    padding-top: 0.1rem;
+    font-size: .35rem;
+    color: white;
+    /*border: 1px solid red;*/
+    margin-left: 0.7rem;
+}
+.bottom li:nth-child(1){
+    background:url("../img/page2_4.png") no-repeat;
+    -webkit-background-size:11% 65%;
+    background-size: 11% 65%;
+}
+.bottom li:nth-child(2){
+    background:url("../img/page2_8.png") no-repeat;
+    -webkit-background-size:13% 60%;
+    background-size: 13% 60%;
+}
+.bottom li:nth-child(3){
+    background:url("../img/page2_5.png") no-repeat;
+    -webkit-background-size:11% 65%;
+    background-size: 11% 65%;
+}
+.bottom li:nth-child(4){
+    background:url("../img/page2_7.png") no-repeat;
+    -webkit-background-size:11% 65%;
+    background-size: 11% 65%;
+}
+.bottom li:nth-child(5){
+    background:url("../img/page2_6.png") no-repeat;
+    -webkit-background-size:11% 65%;
+    background-size: 11% 65%;
+}
+
+/*page3*/
+.page3 .wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.page3 .wrapper *{
+    position: absolute;
+}
+.page3 .wrapper img:nth-child(1){
+    width: 5.75rem;
+    height: 8.6rem;
+    /*height: 8.6rem;*/
+    left:.54rem;
+    top: .53rem;
+}
+.page3 .wrapper img:nth-child(2){
+    width: 2.47rem;
+    height: .74rem;
+    left:0;
+    top: .7rem;
+}
+.page3 .wrapper div:nth-child(3){
+    width: 0.99rem;
+    height: .67rem;
+    left:2.65rem;
+    top: 2.72rem;
+    line-height: .67rem;
+    text-align: center;
+    color: red;
+    font-size: 0.25rem;
+}
+.page3 .wrapper div:nth-child(4){
+    width: .26rem;
+    height: 0.24rem;
+    left:2.95rem;
+    top: 3.49rem;
+}
+.page3 .wrapper div:nth-child(5){
+    width: 3.05rem;
+    height: 0.6rem;
+    left:1.9rem;
+    top: 3.9rem;
+    text-align: center;
+    font-size: 0.4rem;
+}
+.page3 .wrapper div:nth-child(6){
+    width:.93rem;
+    height: .31rem;
+    left:5.18rem;
+    top: 4.39rem;
+    line-height: .31rem;
+    text-align: center;
+    color: royalblue;
+    font-size: 0.25rem;
+}
+.page3 .wrapper div:nth-child(7){
+    width: .26rem;
+    height: 0.24rem;
+    left:5.28rem;
+    top: 6.4rem;
+}
+.page3 .wrapper div:nth-child(8){
+    width: 2.6rem;
+    height: .6rem;
+    left:3.7rem;
+    top: 6.8rem;
+    font-size: 0.35rem;
+    /*line-height: 0.3rem;*/
+    text-align: center;
+}
+.page3 .wrapper div:nth-child(9){
+    width: .67rem;
+    height: .22rem;
+    left:2.74rem;
+    top: 7.29rem;
+    line-height: .22rem;
+    text-align: center;
+    color: red;
+    font-size: 0.25rem;
+}
+.page3 .wrapper div:nth-child(10){
+    width: .26rem;
+    height: 0.24rem;
+    left:2.1rem;
+    top: 7.35rem;
+    transform: rotate(90deg);
+}
+.page3 .wrapper div:nth-child(11){
+    width: 1.9rem;
+    height: .6rem;
+    left:0;
+    top: 7.1rem;
+    text-align: center;
+    font-size: 0.3rem;
+}
+.page3 .wrapper .view{
+    width: 6.4rem;
+    height: 0.6rem;
+    overflow: hidden;
+    background: black;
+    bottom: 0.8rem;
+
+}
+.page3 .wrapper .message{
+    width: 100%;
+    height: 100%;
+    line-height:.6rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: white;;
+    float: left;
+    z-index: 5;
+    letter-spacing: .3rem;
+}
+.page3 .wrapper .eye{
+    height: 100%;
+    width: 30%;
+    color: white;
+    background-color: red;
+    background-image: -webkit-linear-gradient(left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:  linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+}
+
+/*page4*/
+.page4 .top{
+    width: 6.4rem;
+    height: 2.22rem;
+    margin-top: 0.69rem;
+    background: url("../img/page4_1.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page4 .top img:nth-child(1){
+    width: 6.4rem;
+    height: 2.22rem;
+}
+.page4 .top img:nth-child(2),.page4 .top span:nth-child(3){
+    width: 3.4rem;
+    height: 1.15rem;
+    position: absolute;
+    left:2.09rem;
+    top: 0.48rem;
+}
+.page4 .top span:nth-child(3){
+    display: block;
+    line-height: 1.15rem;
+    font-size: 0.6rem;
+    text-align: center;
+    color: #3e0300;
+    left:2.19rem;
+}
+.page4{
+    position: relative;
+}
+.page4 div:nth-child(2){
+    width: 1.01rem;
+    height: 2.5rem;
+    position: absolute;
+    left:.8rem;
+    top:1.1rem;
+    background: url("../img/page4_4.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.page4 .bottom{
+    font-size: .5rem;
+    position: absolute;
+    bottom: 4rem;
+}
+
+/*page5*/
+.page5{
+    position: relative;
+    background-color:#fdd132;
+}
+.page5 *{
+    position: absolute;
+}
+.page5 img:nth-child(1),.page5 span:nth-child(5){
+    width: 3.24rem;
+    height: .78rem;
+    left: .12rem;
+    top:1.53rem;
+    z-index: 1;
+}
+.page5 img:nth-child(2){
+    width: 5.46rem;
+    height: 6.8rem;
+    left: .51rem;
+    top:1.53rem;
+}
+.page5 p:nth-child(3){
+    width: 4.87rem;
+    height:4.16rem;
+    left: .83rem;
+    top:2.46rem;
+    font-size: .3rem;
+    line-height: .4rem;
+    color: white;
+}
+.page5 img:nth-child(4){
+    width: 3.23rem;
+    height: 2.07rem;
+    left: 3.02rem;
+    top:6.48rem;
+}
+.page5 span:nth-child(5){
+    display: block;
+    line-height: .78rem;
+    text-align: center;
+    font-size: .4rem;
+    color: white;
+}
+.page5  .message{
+    width: 6.4rem;
+    height: 0.6rem;
+    line-height:.6rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: white;;
+    letter-spacing: .3rem;
+    bottom: 1.4rem;
+}
+
+
+/*page6*/
+.page6 .wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("../img/page6_bg.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+.page6 .wrapper *{
+    position: absolute;
+}
+.page6 .wrapper img:nth-child(1){
+    width: 5.95rem;
+    height: 7.79rem;
+    left: .26rem;
+    top:.89rem;
+}
+.page6 .wrapper img:nth-child(2),.page6 .wrapper span:nth-child(3){
+    width: 2.77rem;
+    height: 1.25rem;
+    left: 1.8rem;
+    top:1.38rem;
+}
+.page6 .wrapper span:nth-child(3){
+    color: white;
+    height: .77rem;
+    font-size: .4rem;
+    line-height: .77rem;
+    text-align: center;
+}
+.page6 .wrapper span:nth-child(4),.page6 .wrapper span:nth-child(5){
+    height: .64rem;
+    width: 6.4rem;
+    color: white;
+    font-size:.3rem;
+    line-height: .64rem;
+    text-align: center;
+    top: 2.93rem;
+    z-index: 1;
+
+}
+.page6 .wrapper span:nth-child(5){
+    top:3.57rem;
+}
+.page6 .wrapper img:nth-child(6){
+    width: 3.22rem;
+    height: 2.73rem;
+    left: 1.58rem;
+    top: 4.35rem;
+}
+.page6 .wrapper span:nth-child(7){
+    width: 2.23rem;
+    height: .71rem;
+    color: #1f90bc;
+    line-height: .71rem;
+    text-align: center;
+    font-size: .35rem;
+    left: 2.07rem;
+    top:7.5rem;
+    background-color:white;
+}
+.page6 .wrapper .message{
+    width: 6.4rem;
+    height: 0.6rem;
+    line-height:.6rem;
+    text-align: center;
+    font-size: 0.5rem;
+    color: white;;
+    letter-spacing: .3rem;
+    bottom: 1.4rem;
+    text-shadow: .1rem .1rem .3rem red;
+}
+
+/*page7*/
+.page7{
+    position: relative;
+    background-color: #f6f7fb;
+    background:rgba(244,244,244,0.8);
+}
+.page7 *{
+    position: absolute;
+}
+.page7 div:nth-child(1){
+    width: 5rem;
+    height: 5rem;
+    border: 3px dashed cyan;
+    border-radius: 50%;
+    left: .7rem;
+    top:1.76rem;
+}
+.page7 span:nth-child(2){
+    left: .7rem;
+    top:1.76rem;
+    width: 5rem;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1rem;
+    color: black;
+}
+.page7 div:nth-child(3){
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color:#e8e8e8;
+    border-radius: 50%;
+    left: .7rem;
+    top:5.3rem;
+}
+.page7 div:nth-child(3) img{
+    width: .74rem;
+    height: .74rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    /*left: 1.1rem;
+    top:5.5rem;*/
+}
+.page7 .message{
+    width: 6.4rem;
+    height: 0.8rem;
+    line-height:.8rem;
+    text-align: center;
+    font-size: 0.6rem;
+    color: #0097ED;
+    letter-spacing: .2rem;
+    bottom: 1.6rem;
+    text-shadow: -0.1rem -0.1rem .05rem rgba(33,237,0,0.7);
+}
+
+/*滑过加id启动动画*/
+/*page1*/
+#page1 img:nth-child(1){
+    -webkit-animation: bounceOut  2s linear 0s infinite both;
+    animation: bounceOut  2s linear 0s infinite both;
+}
+#page1 .eye{
+    -webkit-animation: move_eye 3s linear 0s infinite both;
+    animation: move_eye 3s linear 0s infinite  both;
+}
+/*page2*/
+#page2 .top img:nth-child(1){
+    -webkit-animation: fadeInDownBig  1s linear 0s 1 both;
+    animation: fadeInDownBig  1s linear 0s 1 both;
+}
+#page2 .top h2{
+    -webkit-animation: fadeInUp  1s linear 0.3s 1 both;
+    animation: fadeInUp  1s linear 0.3s 1 both;
+}
+#page2 .top span:nth-child(3){
+    -webkit-animation: fadeIn  1s linear 0.3s 1 both;
+    animation: fadeIn 1s linear 0.3s 1 both;
+}
+#page2 .top span:nth-child(4) {
+    -webkit-animation: fadeInUp  1s linear 0.3s 1 both;
+    animation: fadeInUp  1s linear 0.3s 1 both;
+}
+#page2 .top img:nth-child(5){
+    -webkit-animation: bounceInLeft  1s linear 0.3s 1 both;
+    animation: bounceInLeft  1s linear 0.3s 1 both;
+}
+#page2 .top img:nth-child(6){
+    -webkit-animation: bounceInRight  1s linear 0.3s 1 both;
+    animation: bounceInRight  1s linear 0.3s 1 both;
+}
+#page2 .bottom li:nth-child(1){
+    -webkit-animation: fadeInLeft  1s linear 0s 1 both;
+    animation: fadeInLeft  1s linear 0s 1 both;
+}
+#page2 .bottom li:nth-child(2){
+    -webkit-animation: fadeInRight  1s linear 0.2s 1 both;
+    animation: fadeInRight  1s linear 0.2s 1 both;
+}
+#page2 .bottom li:nth-child(3){
+    -webkit-animation: bounceInLeft  1s linear 0.4s 1 both;
+    animation: bounceInLeft  1s linear 0.4s 1 both;
+}
+#page2 .bottom li:nth-child(4){
+    -webkit-animation: bounceInRight  1s linear 0.6s 1 both;
+    animation: bounceInRight  1s linear 0.6s 1 both;
+}
+#page2 .bottom li:nth-child(5){
+    -webkit-animation: zoomInUp  1s linear 0.8s 1 both;
+    animation: zoomInUp  1s linear 0.8s 1 both;
+}
+/*page3*/
+#page3 .wrapper img:nth-child(1){
+    -webkit-animation: rotateIn 0.3s linear 0s 1 both;
+    animation: rotateIn 0.3s linear 0s 1 both;
+}
+#page3 .wrapper img:nth-child(2){
+    -webkit-animation: flipInX 0.6s linear 0.3s 1 both;
+    animation: flipInX 0.6s linear 0.3s 1 both;
+}
+#page3 .wrapper div:nth-child(3){
+    -webkit-animation: bounceInLeft 1s linear 0s 1 both;
+    animation: bounceInLeft 1s linear 0s 1 both;
+}
+#page3 .wrapper div:nth-child(4){
+    -webkit-animation: bounceInUp 1s linear 0.3s 1 both;
+    animation: bounceInUp 1s linear 0.3s 1 both;
+}
+#page3 .wrapper div:nth-child(5){
+    -webkit-animation: bounceInRight 1s linear 0.6s 1 both;
+    animation: bounceInRight 1s linear 0.6s 1 both;
+}
+#page3 .wrapper div:nth-child(6){
+    -webkit-animation: jello 1s linear 0s 1 both;
+    animation: jello 1s linear 0s 1 both;
+}
+#page3 .wrapper div:nth-child(7){
+    -webkit-animation: rubberBand 1s linear 0.3s 1 both;
+    animation: rubberBand 1s linear 0.3s 1 both;
+}
+#page3 .wrapper div:nth-child(8){
+    -webkit-animation: slideInUp 1s linear 0.6s 1 both;
+    animation: slideInUp 1s linear 0.6s 1 both;
+}
+#page3 .wrapper div:nth-child(9){
+    -webkit-animation: slideInUp 1s linear 0s 1 both;
+    animation: slideInUp 1s linear 0s 1 both;
+}
+#page3 .wrapper div:nth-child(10){
+    -webkit-animation: zoomIn 1s linear 0.3s 1 both;
+    animation: zoomIn 1s linear 0.3s 1 both;
+}
+#page3 .wrapper div:nth-child(11){
+    -webkit-animation: tada 1s linear 0.6s 1 both;
+    animation: tada 1s linear 0.6s 1 both;
+}
+#page3 .wrapper .eye{
+    -webkit-animation: move_eye 3s linear 0s infinite both;
+    animation: move_eye 3s linear 0s infinite  both;
+}
+/*page4*/
+#page4 .top{
+    -webkit-animation: fadeIn 0.2s linear 0s 1 both;
+    animation: fadeIn 0.2s linear 0s 1 both;
+}
+#page4 .top img:nth-child(1){
+    -webkit-animation: flash 0.2s linear 0.2s 1 both;
+    animation: flash 0.2s linear 0.2s 1 both;
+}
+#page4 .top img:nth-child(2){
+    -webkit-animation: shake 0.5s linear 0.3s 1 both;
+    animation: shake 0.5s linear 0.3s 1 both;
+}
+#page4 .top span:nth-child(3){
+    -webkit-animation: fadeInDownBig 1s linear 0.5s 1 both;
+    animation: fadeInDownBig 1s linear 0.5s 1 both;
+}
+#page4 div:nth-child(2){
+    -webkit-animation: rollIn 1s linear 0.7s 1 both;
+    animation: rollIn 1s linear 0.7s 1 both;
+}
+/*page5*/
+#page5 img:nth-child(1){
+    -webkit-animation: zoomInDown 1s linear 0.1s 1 both;
+    animation: zoomInDown 1s linear 0.1s 1 both;
+}
+#page5 img:nth-child(2){
+    -webkit-animation: flipInY 0.8s linear 0s 1 both;
+    animation:flipInY 0.8s linear 0s 1 both;
+}
+#page5 p:nth-child(3){
+    -webkit-animation: fadeIn 1s linear 0.3s 1 both;
+    animation: fadeIn 1s linear 0.3s 1 both;
+}
+#page5 img:nth-child(4){
+    -webkit-animation: bounceInLeft 1s linear 0.3s 1 both;
+    animation: bounceInLeft 1s linear 0.3s 1 both;
+}
+#page5 span:nth-child(5){
+    -webkit-animation: bounceInRight 1s linear 0.2s 1 both;
+    animation: bounceInRight 1s linear 0.2s 1 both;
+}
+#page5  .message{
+    -webkit-animation: swing 1s linear 0s infinite both;
+    animation: swing 1s linear 0s infinite both;
+}
+/*page6*/
+#page6 .wrapper{
+    -webkit-animation: fadeIn 0.2s linear 0s 1 both;
+    animation: fadeIn 0.2s linear 0s 1 both;
+}
+#page6 .wrapper img:nth-child(1){
+    -webkit-animation: flip 0.3s linear 0s 1 both;
+    animation: flip 0.3s linear 0s 1 both;
+}
+#page6 .wrapper img:nth-child(2){
+    -webkit-animation: slideInDown 0.8s linear 0.1s 1 both;
+    animation:  slideInDown 0.8s linear 0.1s 1 both;
+}
+#page6 .wrapper span:nth-child(3){
+    -webkit-animation: zoomInDown 1s linear 0.1s 1 both;
+    animation:  zoomInDown 1s linear 0.1s 1 both;
+}
+#page6 .wrapper span:nth-child(4){
+    -webkit-animation: bounceInLeft 1s linear 0.3s 1 both;
+    animation:   bounceInLeft 1s linear 0.3s 1 both;
+}
+#page6 .wrapper span:nth-child(5){
+    -webkit-animation:  fadeInRightBig 1s linear 0.3s 1 both;
+    animation:   fadeInRightBig 1s linear 0.3s 1 both;
+}
+#page6 .wrapper img:nth-child(6){
+    -webkit-animation:  lightSpeedIn 1s linear 0.3s 1 both;
+    animation:   lightSpeedIn 1s linear 0.3s 1 both;
+}
+#page6 .wrapper span:nth-child(7){
+    -webkit-animation:  bounceIn 1s linear 0.4s 1 both;
+    animation: bounceIn 1s linear 0.4s 1 both;
+}
+#page6 .wrapper .message{
+    -webkit-animation: flash 2s linear 0s infinite both;
+    animation: flash 2s linear 0s infinite  both;
+}
+/*page7*/
+#page7 div:nth-child(1){
+    -webkit-animation: rotateIn 0.5s linear 0s infinite both;
+    animation: rotateIn .5s linear 0s infinite both;
+}
+#page7 span:nth-child(2){
+    -webkit-animation: wobble 1s linear 0s 1 both;
+    animation: wobble 1s linear 0s 1 both;
+}
+#page7 div:nth-child(3){
+    -webkit-animation: fadeIn 0.8s linear 0s 1 both;
+    animation: fadeIn 0.8s linear 0s 1 both;
+}
+#page7 div:nth-child(3) img{
+    -webkit-animation: flipInY 1s linear 0.2s 1 both;
+    animation: flipInY 1s linear 0.2s infinite both;
+}
+#page7 .message{
+    -webkit-animation: flip 4s linear 0s infinite both;
+    animation: flip 4s linear 0s infinite  both;
+}
+
+/*底边箭头*/
+.arrow {
+    position: absolute;
+    left: 50%;
+    bottom: .2rem;
+    z-index: 10;
+    margin-left: -.24rem;
+    width: .48rem;
+    height: .36rem;
+    background: url("../img/tip.png") no-repeat;
+    background-size: 100% 100%;
+    -webkit-animation: bounce 1s linear 0s infinite both;
+    animation: bounce 1s linear 0s infinite both;
+}
+
+/*分页器pagination-fraction 数字位置*/
+.swiper-pagination-fraction{
+    width: .5rem;
+    height: .18rem;
+    line-height: .18rem;
+    font-size: .16rem;
+    position: absolute;
+    bottom: .2rem;
+    left:5.7rem;
+    color: red;
+    font-size: 700;
+}
+
+/*动画*/
+@-webkit-keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
+@keyframes move_eye { from { margin-left:-20%; } to { margin-left:100%; }  }
