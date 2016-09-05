@@ -152,27 +152,27 @@ html,body,.swiper-container,.swiper-slider,.main{
     vertical-align: text-top;
 }
 .bottom li:nth-child(1){
-    background:url("../img/page2_4.png") no-repeat;
+    background:url("../img/page2_4.png") no-repeat left center;
     -webkit-background-size:11% 65%;
     background-size: 11% 65%;
 }
 .bottom li:nth-child(2){
-    background:url("../img/page2_8.png") no-repeat;
+    background:url("../img/page2_8.png") no-repeat no-repeat left center;
     -webkit-background-size:13% 60%;
-    background-size: 13% 60%;
+    background-size: 11% 60%;
 }
 .bottom li:nth-child(3){
-    background:url("../img/page2_5.png") no-repeat;
+    background:url("../img/page2_5.png") no-repeat no-repeat left center;
     -webkit-background-size:11% 65%;
     background-size: 11% 65%;
 }
 .bottom li:nth-child(4){
-    background:url("../img/page2_7.png") no-repeat;
+    background:url("../img/page2_7.png") no-repeat no-repeat left center;
     -webkit-background-size:11% 65%;
     background-size: 11% 65%;
 }
 .bottom li:nth-child(5){
-    background:url("../img/page2_6.png") no-repeat;
+    background:url("../img/page2_6.png") no-repeat no-repeat left center;
     -webkit-background-size:11% 65%;
     background-size: 11% 65%;
 }
@@ -244,8 +244,8 @@ html,body,.swiper-container,.swiper-slider,.main{
     height: .6rem;
     left:3.7rem;
     top: 6.8rem;
-    font-size: 0.35rem;
-    /*line-height: 0.3rem;*/
+    font-size: 0.3rem;
+    /*line-height: 0.3rem;达奇*/
     text-align: center;
 }
 .page3 .wrapper div:nth-child(9){
@@ -268,38 +268,12 @@ html,body,.swiper-container,.swiper-slider,.main{
 .page3 .wrapper div:nth-child(11){
     width: 1.9rem;
     height: .6rem;
-    left:0;
+    left:0.1rem;
     top: 7.1rem;
     text-align: center;
-    font-size: 0.3rem;
+    font-size: 0.28rem;
 }
-/*.page3 .wrapper .view{
-    width: 6.4rem;
-    height: 0.6rem;
-    overflow: hidden;
-    background: black;
-    bottom: 0.8rem;
 
-}
-.page3 .wrapper .message{
-    width: 100%;
-    height: 100%;
-    line-height:.6rem;
-    text-align: center;
-    font-size: 0.4rem;
-    color: white;;
-    float: left;
-    z-index: 5;
-    letter-spacing: .3rem;
-}
-.page3 .wrapper .eye{
-    height: 100%;
-    width: 30%;
-    color: white;
-    background-color: red;
-    background-image: -webkit-linear-gradient(left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
-    background-image:  linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
-}*/
 
 /*page4*/
 .page4 .top{
@@ -528,15 +502,32 @@ html,body,.swiper-container,.swiper-slider,.main{
     /*left: 1.1rem;
     top:5.5rem;*/
 }
-.page7 .message{
+
+.page7  .view{
     width: 6.4rem;
-    height: 0.8rem;
-    line-height:.8rem;
-    text-align: center;
-    font-size: 0.6rem;
-    color: white;
-    letter-spacing: .2rem;
+    height: 0.6rem;
+    overflow: hidden;
+    background: black;
     bottom: 1.8rem;
+}
+.page7 .message{
+    width: 100%;
+    height: 100%;
+    line-height:.6rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: white;;
+    float: left;
+    z-index: 5;
+    letter-spacing: .3rem;
+}
+.page7  .eye{
+    height: 100%;
+    width: 20%;
+    color: white;
+    background-color: red;
+    background-image: -webkit-linear-gradient(left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
+    background-image:  linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
 }
 
 /*滑过加id启动动画*/
@@ -596,8 +587,8 @@ html,body,.swiper-container,.swiper-slider,.main{
     animation: rotateIn 0.3s linear 0s 1 both;
 }
 #page3 .wrapper img:nth-child(2){
-    -webkit-animation: flipInX 0.6s linear 0.3s 1 both;
-    animation: flipInX 0.6s linear 0.3s 1 both;
+    -webkit-animation: bounceInRight 0.6s linear 0.3s 1 both;
+    animation: bounceInRight 0.6s linear 0.3s 1 both;
 }
 #page3 .wrapper div:nth-child(3){
     -webkit-animation: bounceInLeft 1s linear 0s 1 both;
@@ -635,10 +626,7 @@ html,body,.swiper-container,.swiper-slider,.main{
     -webkit-animation: tada 1s linear 0.6s 1 both;
     animation: tada 1s linear 0.6s 1 both;
 }
-/*#page3 .wrapper .eye{
-    -webkit-animation: move_eye 3s linear 0s infinite both;
-    animation: move_eye 3s linear 0s infinite  both;
-}*/
+
 /*page4*/
 #page4 .top{
     -webkit-animation: fadeIn 0.2s linear 0s 1 both;
@@ -666,8 +654,8 @@ html,body,.swiper-container,.swiper-slider,.main{
     animation: zoomInDown 1s linear 0.1s 1 both;
 }
 #page5 img:nth-child(2){
-    -webkit-animation: flipInY 0.8s linear 0s 1 both;
-    animation:flipInY 0.8s linear 0s 1 both;
+    -webkit-animation: rollIn 0.8s linear 0s 1 both;
+    animation:rollIn 0.8s linear 0s 1 both;
 }
 #page5 p:nth-child(3){
     -webkit-animation: fadeIn 1s linear 0.3s 1 both;
@@ -718,10 +706,6 @@ html,body,.swiper-container,.swiper-slider,.main{
     -webkit-animation:  bounceIn 1s linear 0.4s 1 both;
     animation: bounceIn 1s linear 0.4s 1 both;
 }
-#page6 .wrapper .message{
-    -webkit-animation: flash 2s linear 0s infinite both;
-    animation: flash 2s linear 0s infinite  both;
-}
 /*page7*/
 #page7 div:nth-child(1){
     -webkit-animation: rotateIn 0.5s linear 0s infinite both;
@@ -736,12 +720,12 @@ html,body,.swiper-container,.swiper-slider,.main{
     animation: fadeIn 0.8s linear 0s 1 both;
 }
 #page7 div:nth-child(3) img{
-    -webkit-animation: flipInY 1s linear 0.2s 1 both;
-    animation: flipInY 1s linear 0.2s infinite both;
+    -webkit-animation: shake 3s linear 0.2s 1 both;
+    animation: shake 3s linear 0.2s infinite both;
 }
-#page7 .message{
-    -webkit-animation: flip 4s linear 0s infinite both;
-    animation: flip 4s linear 0s infinite  both;
+#page7  .eye{
+    -webkit-animation: move_eye 3s linear 0s infinite both;
+    animation: move_eye 3s linear 0s infinite  both;
 }
 
 /*底边箭头*/
