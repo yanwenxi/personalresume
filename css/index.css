@@ -62,43 +62,16 @@ html,body,.swiper-container,.swiper-slider,.main{
     position: absolute;
 }
 .page1 img:nth-child(1) {
-    width:4.33rem;
-    height: 3.6rem;
-    left:1.23rem;
-    top:1.22rem;
+    width:3.75rem;
+    height: 2.94rem;
+    left:1.59rem;
+    top:1.49rem;
 }
 .page1 img:nth-child(2){
     width: 6.4rem;
-    height: 4.11rem;
-    bottom: 0.8rem;
+    height: 3.39rem;
+    bottom: 0.74rem;
     left:0;
-}
-.page1 .view{
-    width: 6.4rem;
-    height: 0.6rem;
-    overflow: hidden;
-    /*background: rgb(75,148,190);*/
-    bottom: 5.4rem;
-    left: 0;
-}
-.page1  .message{
-    width: 100%;
-    height: 100%;
-    line-height:.6rem;
-    text-align: center;
-    font-size: 0.4rem;
-    color: white;;
-    float: left;
-    z-index: 2;
-    letter-spacing: .3rem;
-}
-.page1  .eye{
-    height: 100%;
-    width: 2%;
-    /*color: rgb(75,148,190);*/
-    background-color: red;
-    background-image: -webkit-linear-gradient(left, rgba( 75,148,190,0.9 ) 25%, rgba( 75,148,190,0.1 ) 50%, rgba( 75,148,190,0.9 ) 75%);
-    background-image:  linear-gradient(to right, rgba( 75,148,190,0.9 ) 25%, rgba( 75,148,190,0.1 ) 50%, rgba( 75,148,190,0.9 ) 75%);
 }
 
 /*page2*/
@@ -129,7 +102,7 @@ html,body,.swiper-container,.swiper-slider,.main{
     line-height: .69rem;
     top: 2.54rem;
     left: 2.21rem;
-    font-size: 0.3rem;
+    font-size: 0.46rem;
     color: #007aff;
     text-align: center;
 }
@@ -163,17 +136,20 @@ html,body,.swiper-container,.swiper-slider,.main{
     bottom: 0;
 }
 .bottom{
-    margin-top:.6rem;
+    margin-top:.5rem;
 }
 .bottom li{
     width: 4.6rem;
-    height: 1rem;
+    height: .46rem;
+    line-height: .46rem;
     padding-left: .77rem;
     padding-top: 0.1rem;
-    font-size: .35rem;
+    font-size: .28rem;
     color: white;
     /*border: 1px solid red;*/
     margin-left: 0.7rem;
+    margin-top: .32rem;
+    vertical-align: text-top;
 }
 .bottom li:nth-child(1){
     background:url("../img/page2_4.png") no-repeat;
@@ -297,7 +273,7 @@ html,body,.swiper-container,.swiper-slider,.main{
     text-align: center;
     font-size: 0.3rem;
 }
-.page3 .wrapper .view{
+/*.page3 .wrapper .view{
     width: 6.4rem;
     height: 0.6rem;
     overflow: hidden;
@@ -323,7 +299,7 @@ html,body,.swiper-container,.swiper-slider,.main{
     background-color: red;
     background-image: -webkit-linear-gradient(left, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
     background-image:  linear-gradient(to right, rgba( 0,0,0,0.9 ) 25%, rgba( 0,0,0,0.1 ) 50%, rgba( 0,0,0,0.9 ) 75%);
-}
+}*/
 
 /*page4*/
 .page4 .top{
@@ -505,8 +481,11 @@ html,body,.swiper-container,.swiper-slider,.main{
 /*page7*/
 .page7{
     position: relative;
-    background-color: #f6f7fb;
-    background:rgba(244,244,244,0.8);
+    /*background-color: #f6f7fb;
+    background:rgba(244,244,244,0.8);*/
+    background: url("../img/page6_bg.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 .page7 *{
     position: absolute;
@@ -527,7 +506,7 @@ html,body,.swiper-container,.swiper-slider,.main{
     text-align: center;
     line-height: 5rem;
     font-size: 1rem;
-    color: black;
+    color: white;
 }
 .page7 div:nth-child(3){
     width: 1.6rem;
@@ -555,10 +534,9 @@ html,body,.swiper-container,.swiper-slider,.main{
     line-height:.8rem;
     text-align: center;
     font-size: 0.6rem;
-    color: #0097ED;
+    color: white;
     letter-spacing: .2rem;
-    bottom: 1.6rem;
-    text-shadow: -0.1rem -0.1rem .05rem rgba(33,237,0,0.7);
+    bottom: 1.8rem;
 }
 
 /*滑过加id启动动画*/
@@ -566,10 +544,6 @@ html,body,.swiper-container,.swiper-slider,.main{
 #page1 img:nth-child(1){
     -webkit-animation: bounceOut  2s linear 0s infinite both;
     animation: bounceOut  2s linear 0s infinite both;
-}
-#page1 .eye{
-    -webkit-animation: move_eye 3s linear 0s infinite both;
-    animation: move_eye 3s linear 0s infinite  both;
 }
 /*page2*/
 #page2 .top img:nth-child(1){
@@ -661,10 +635,10 @@ html,body,.swiper-container,.swiper-slider,.main{
     -webkit-animation: tada 1s linear 0.6s 1 both;
     animation: tada 1s linear 0.6s 1 both;
 }
-#page3 .wrapper .eye{
+/*#page3 .wrapper .eye{
     -webkit-animation: move_eye 3s linear 0s infinite both;
     animation: move_eye 3s linear 0s infinite  both;
-}
+}*/
 /*page4*/
 #page4 .top{
     -webkit-animation: fadeIn 0.2s linear 0s 1 both;
@@ -787,15 +761,16 @@ html,body,.swiper-container,.swiper-slider,.main{
 
 /*分页器pagination-fraction 数字位置*/
 .swiper-pagination-fraction{
-    width: .5rem;
+    width: 0.6rem;
     height: .18rem;
     line-height: .18rem;
     font-size: .16rem;
     position: absolute;
-    bottom: .2rem;
-    left:5.7rem;
+    bottom: 0rem;
+    left:5.8rem;
     color: red;
-    font-size: 700;
+    font-weight: 700;
+    text-align: center;
 }
 
 /*动画*/
