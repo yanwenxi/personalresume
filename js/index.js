@@ -86,7 +86,7 @@ new Swiper('.swiper-container', {
     if (reg1.test(navigator.userAgent) || reg2.test(navigator.userAgent)) {
 
     } else {
-        alert("友情提醒：本简历不支持PC端，请用移动设备观看！");
+        alert("友情提醒：本简历不支持PC端，请用移动设备观看！按F12也可在控制台查看哦");
     }
 }();
 

@@ -352,9 +352,9 @@ html,body,.swiper-container,.swiper-slider,.main{
 }
 .page4 .bottom img:nth-child(5){
      width: 0.1rem;
-     height: 0.59rem;
+     height: 0.72rem;
      left:1.24rem;
-     bottom: 0.9rem;
+     bottom: 0.77rem;
  }
 .page4 .bottom div p{
     font-size: 0.24rem;
@@ -364,13 +364,13 @@ html,body,.swiper-container,.swiper-slider,.main{
     width: 4rem;
     height: 1.5rem;
     right: 0.24rem;
-    bottom: 3.95rem;
+    bottom: 4.6rem;
 }
 .page4 .bottom div:nth-child(7){
     width: 4rem;
     height: 1.5rem;
     right: 0.24rem;
-    bottom: 0.9rem;
+    bottom: 1.49rem;
 }
 
 /*page5*/
@@ -739,6 +739,10 @@ html,body,.swiper-container,.swiper-slider,.main{
 #page4 .bottom div:nth-child(7) p:nth-child(2){
     -webkit-animation: zoomInRight 0.2s linear 2.4s 1 both;
     animation: zoomInRight 0.2s linear 2.4s 1 both;
+}
+#page4 .bottom div:nth-child(7) p:nth-child(3){
+    -webkit-animation: zoomInRight 0.2s linear 2.6s 1 both;
+    animation: zoomInRight 0.2s linear 2.6s 1 both;
 }
 /*page5*/
 #page5 img:nth-child(1){
