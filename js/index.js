@@ -1,6 +1,3 @@
-/**
- * Created by 27899 on 2016/8/28.
- */
 FastClick.attach(document.body);//解决延迟300ms问题
 new Swiper('.swiper-container', {
     direction: 'vertical',
