@@ -746,10 +746,12 @@ html,body,.swiper-container,.swiper-slider,.main{
     animation: zoomInRight 0.2s linear 2.6s 1 both;
 }
 /*page5*/
+#page5 {
+    opacity: 1;
+}
 #page5 img:nth-child(1){
     -webkit-animation: zoomInDown 1s linear 0.1s 1 both;
     animation: zoomInDown 1s linear 0.1s 1 both;
-    opacity: 1;
 }
 #page5 img:nth-child(2){
     -webkit-animation: rollIn 0.8s linear 0s 1 both;
