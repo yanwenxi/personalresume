@@ -72,7 +72,7 @@ new Swiper('.swiper-container', {
         }, false);
     }
 
-    window.setTimeout(controlMusic, 1000);
+    window.setTimeout(controlMusic, 500);
 }();
 //检测pc还是移动
 ~function () {
