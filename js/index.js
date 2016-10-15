@@ -64,14 +64,16 @@ new Swiper('.swiper-container', {
     },false);
    
 }();
-(function (){
+~function(){
+    setTimeout(function (){
         musicAudio.volume = 0.5;
         musicAudio.play();
         musicAudio.addEventListener('canplay',function (){
             music.style.display = 'block';
             music.className = 'music move';
         },false);
-    })();
+    }, 1000);
+}();
 
 //检测pc还是移动
 ~function () {
