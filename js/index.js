@@ -46,7 +46,18 @@ new Swiper('.swiper-container', {
     }
     document.documentElement.style.fontSize = 100 * ratio + "px";
 }();
-
+;function(){
+    var music = document.getElementById('music'),
+        musicAudio = document.getElementById('musicAudio');
+    setTimeout(function (){
+        musicAudio.volume = 0.5;
+        musicAudio.play();
+        musicAudio.addEventListener('canplay',function (){
+            music.style.display = 'block';
+            music.className = 'music move';
+        },false);
+    }, 1000);
+}();
 //music
 //->MUSIC
 ~function(){
@@ -61,16 +72,10 @@ new Swiper('.swiper-container', {
         musicAudio.pause();
         music.className = 'music';
     },false);
-    function controlMusic(){
-        musicAudio.volume = 0.5;
-        musicAudio.play();
-        musicAudio.addEventListener('canplay',function (){
-            music.style.display = 'block';
-            music.className = 'music move';
-        },false);
-    }
-    window.setTimeout(controlMusic, 1000);
+   
 }();
+
+
 //检测pc还是移动
 ~function () {
     var reg1 = /AppleWebKit.*Mobile/i,
