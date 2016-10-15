@@ -49,30 +49,27 @@ new Swiper('.swiper-container', {
 
 //music
 //->MUSIC
-~function () {
-    var musicMenu = document.getElementById('musicMenu'),
+~function(){
+    var music = document.getElementById('music'),
         musicAudio = document.getElementById('musicAudio');
-
-    musicMenu.addEventListener('click', function () {
-        if (musicAudio.paused) {//->暂停
+    music.addEventListener('click',function (){
+        if (musicAudio.paused) {
             musicAudio.play();
-            musicMenu.className = 'music move';
+            music.className = 'music move';
             return;
         }
         musicAudio.pause();
-        musicMenu.className = 'music';
-    }, false);
-
-    function controlMusic() {
-        musicAudio.volume = 0.1;
+        music.className = 'music';
+    },false);
+    function controlMusic(){
+        musicAudio.volume = 0.5;
         musicAudio.play();
-        musicAudio.addEventListener('canplay', function () {
-            musicMenu.style.display = 'block';
-            musicMenu.className = 'music move';
-        }, false);
+        musicAudio.addEventListener('canplay',function (){
+            music.style.display = 'block';
+            music.className = 'music move';
+        },false);
     }
-
-    window.setTimeout(controlMusic, 500);
+    window.setTimeout(controlMusic, 1000);
 }();
 //检测pc还是移动
 ~function () {
