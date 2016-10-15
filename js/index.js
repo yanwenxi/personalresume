@@ -46,23 +46,13 @@ new Swiper('.swiper-container', {
     }
     document.documentElement.style.fontSize = 100 * ratio + "px";
 }();
-;function(){
-    var music = document.getElementById('music'),
+ var music = document.getElementById('music'),
         musicAudio = document.getElementById('musicAudio');
-    setTimeout(function (){
-        musicAudio.volume = 0.5;
-        musicAudio.play();
-        musicAudio.addEventListener('canplay',function (){
-            music.style.display = 'block';
-            music.className = 'music move';
-        },false);
-    }, 1000);
-}();
+
 //music
 //->MUSIC
 ~function(){
-    var music = document.getElementById('music'),
-        musicAudio = document.getElementById('musicAudio');
+   
     music.addEventListener('click',function (){
         if (musicAudio.paused) {
             musicAudio.play();
@@ -74,7 +64,16 @@ new Swiper('.swiper-container', {
     },false);
    
 }();
-
+~function(){
+    setTimeout(function (){
+        musicAudio.volume = 0.5;
+        musicAudio.play();
+        musicAudio.addEventListener('canplay',function (){
+            music.style.display = 'block';
+            music.className = 'music move';
+        },false);
+    }, 1000);
+}();
 
 //检测pc还是移动
 ~function () {
